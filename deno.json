@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "letitsnow": "deno run --allow-read=data aoc23.ts"
+  },
+  "imports": {
+    "std/": "https://deno.land/std@0.209.0/"
+  }
+}
