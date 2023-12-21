@@ -18,26 +18,8 @@ const DIGIT_MAP: Record<string, number> = {
   "nine": 9,
 };
 
-const DIGITS = [
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  "one",
-  "two",
-  "three",
-  "four",
-  "five",
-  "six",
-  "seven",
-  "eight",
-  "nine",
-];
+// deno-fmt-ignore
+const DIGITS = [1, 2, 3, 4, 5, 6, 7, 8, 9, "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
 const findDigit = (line: string, tail = false) => {
   const indexes = DIGITS
@@ -81,8 +63,9 @@ export const summarizeFirstAndLastDigitsOfEachLine = (text: string) => {
 export const run = async () => {
   const text = await Deno.readTextFile("data/day_1.txt");
 
+  console.log("Day 1:");
   console.log(
-    "Day One Result: ",
+    "  Sum of first and last digits, alltogether summarized: ",
     summarizeFirstAndLastDigitsOfEachLine(text),
   );
 };
