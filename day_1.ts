@@ -1,11 +1,3 @@
-class MalformedDataError extends Error {
-  constructor(message: string) {
-    super(message);
-    this.name = "MalformedDataError";
-    Error.captureStackTrace(this, MalformedDataError);
-  }
-}
-
 const DIGIT_MAP: Record<string, number> = {
   "one": 1,
   "two": 2,
